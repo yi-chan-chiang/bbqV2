@@ -1,7 +1,7 @@
 ﻿(function () {  //$http.defaults.headers.common.Authorization = 'Bearer  ' + $rootScope.Token; http給token
     var app = angular.module('myService', ['ngQueue']);
-    // var ApiUrl = 'http://192.168.0.100/api/'
-    var ApiUrl = 'http://localhost:54632/api/'
+    var ApiUrl = 'http://192.168.0.100/api/'
+    // var ApiUrl = 'http://localhost:54632/api/'
     app.service('languageService', [function () {
         var vm = this;
 
