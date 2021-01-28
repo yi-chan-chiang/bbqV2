@@ -560,7 +560,10 @@
                 } else {
                     var id = $rootScope.data.checkId;
                     if (vm.checkList.length) {
-                        id = vm.checkList[vm.checkList.length - 1]["id"];
+                        var checkId = vm.checkList[vm.checkList.length - 1]["id"];
+                        if (checkId > id) {
+                            id = checkId;
+                        }                        
                     }
                     id++;
                     if (id > 150) {
