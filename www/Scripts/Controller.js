@@ -669,6 +669,10 @@
                     return $rootScope.data.checkId + 1;
             }
         };
+        //選擇辣度
+        vm.SpicyRadioSelect = function (spicy) {
+            vm.orderList.spicy = spicy;
+        };
         //折扣結束 辣包開始
         vm.SpicySelect = function () {
             if (vm.orderList.spicyPackage == 0) {
